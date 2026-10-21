@@ -1,0 +1,17 @@
+# Dependencias, configuración privada y archivos del entorno
+node_modules/
+.env
+.env.*
+.vercel/
+.DS_Store
+Thumbs.db
+*.log
+
+# Notas, pruebas y generadores locales: no pertenecen a la entrega pública
+/LOCAL-NOTES.md
+/test.cjs
+/build-portrait.py
+/build-nomada-preview.cjs
+/screenshots/
+/test-results/
+/playwright-report/

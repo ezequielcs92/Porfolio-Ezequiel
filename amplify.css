@@ -1,0 +1,82 @@
+/* Escala editorial mayor + escenas de sección. Siempre legible sin animación. */
+body{font-size:16px}
+.section{padding-block:140px;position:relative;isolation:isolate}
+.eyebrow{font-size:13px;letter-spacing:1.4px}
+.section-heading{gap:45px;margin-bottom:64px;align-items:flex-end}
+.section-heading h2,.about h2,.faq h2{font-size:clamp(44px,4.9vw,70px);line-height:1.12;letter-spacing:-3px;margin-top:28px;overflow-wrap:normal}
+.section-description{font-size:17px;line-height:1.8;max-width:320px}
+.button,.text-link{font-size:15px}.button{min-height:60px;padding:17px 26px}
+.brand-name{font-size:14px}.brand-symbol{font-size:43px}
+.desktop-nav{font-size:15px;gap:32px}.header-cta{font-size:14px;padding:12px 20px}
+.hero-topline,.hero-jack .hero-topline{font-size:11px;letter-spacing:1px}
+.hero-jack .hero-name{font-size:clamp(80px,11.2vw,175px);letter-spacing:-8px}
+.hero-jack .hero-eyebrow{font-size:18px;line-height:1.55}
+.hero-jack .hero-description{font-size:15px;line-height:1.8}
+.hero-jack .text-link{font-size:14px}.hero-jack .hero-actions .button{font-size:14px;min-height:61px;padding:17px 23px}
+.hero-jack .hero-note p{font-size:13px}.hero-jack .mini-code{font-size:34px}
+.jack-left{width:285px}.jack-right{width:270px}.jack-move-hint{font-size:10px}
+.portrait-caption{font-size:10px;letter-spacing:.8px}.hero-jack .hero-bottom>span,.hero-bottom a{font-size:10px}
+.stack-strip{padding-block:32px}.stack-inner>span{font-size:12px}.stack-inner p,.stack-inner .stack-motion-track p{font-size:26px;gap:28px}
+.section-aside p{font-size:14px}.count-badge{font-size:48px}.count-badge>span{font-size:12px}
+.portfolio-credit{font-size:15px;line-height:1.9;max-width:790px;margin-bottom:44px}
+.project-grid{gap:48px 28px}.project-info{gap:13px;padding-top:21px}.project-index{font-size:12px;padding-top:4px}
+.project-info h3{font-size:19px;line-height:1.4;letter-spacing:-.6px}.project-info p{font-size:12px;line-height:1.7;margin-top:8px}
+.project-arrow{font-size:25px}.project-visit{font-size:16px}.project-media{border-radius:12px}
+.projects-end>span,.projects-end .text-link{font-size:14px}.projects-end{padding-top:36px;margin-top:65px}
+.service-card{padding:40px 30px}.service-top>span{font-size:15px}.service-top svg{width:55px;height:55px}
+.service-card h3{font-size:29px;line-height:1.25;letter-spacing:-1px}.service-card p{font-size:16px;line-height:1.85}
+.service-card li{font-size:14px;line-height:1.8}.service-link{font-size:15px;padding-top:24px}.service-link span{font-size:28px}
+.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.services .service-card:nth-child(odd){border-left:0}.services .service-card:nth-child(n+3){border-top:1px solid #d6d6d3}
+.about h2{font-size:clamp(40px,4.4vw,60px)}.about-copy p{font-size:18px;line-height:1.85}.about-copy p+p{margin-top:24px}
+.about-tags{gap:10px;margin-top:30px}.about-tags span{font-size:12px;padding:8px 13px}
+.process-grid h3{font-size:27px}.process-grid p{font-size:16px;line-height:1.85}.step-number{font-size:18px}
+.process.has-scroll-scene .process-grid>li{width:clamp(390px,43vw,600px);padding:30px 36px 42px;border-radius:18px}
+.process.has-scroll-scene .step-number{font-size:44px}.process.has-scroll-scene .process-grid h3{font-size:40px;margin-top:36px}
+.process.has-scroll-scene .process-grid p{font-size:18px}.process.has-scroll-scene>.wrap{padding-block:50px 30px}
+.faq-list summary{font-size:17px;padding-block:28px;line-height:1.6}.faq-list summary>span{font-size:30px}
+.faq-list details p{font-size:16px;line-height:1.85}.faq h2{font-size:clamp(40px,4.1vw,58px)}
+.contact h2{font-size:clamp(62px,6.2vw,88px);letter-spacing:-4px}.contact-star{font-size:80px}
+.contact-copy>p:not(.eyebrow){font-size:18px}.contact-signature strong{font-size:18px}.contact-signature>div>span{font-size:13px}
+.contact-copy .contact-availability{font-size:13px!important}.contact-panel{padding:38px;border-radius:18px}
+.contact-panel h3{font-size:27px;line-height:1.35}.contact-intro{font-size:14px}.field label,.prepared-result>label{font-size:14px}
+.field input,.field select,.field textarea,.prepared-result textarea{font-size:16px;min-height:52px;padding:14px}
+.field{margin-bottom:22px}.form-privacy{font-size:12px}.preview-notice{font-size:13px}.form-submit{font-size:15px}
+#form-status{font-size:14px}.button-small{font-size:13px;min-height:45px}.direct-contact>.wrap>span{font-size:14px}.direct-contact a{font-size:15px}
+.footer-top>p{font-size:15px}.footer-top>.text-link{font-size:14px}.footer-bottom{font-size:11px}.motion-toggle{font-size:11px;min-height:43px;padding:11px 16px}
+
+/* Los títulos se reconstruyen con spans accesibles, sin ocultar contenido por CSS. */
+.word-clip{display:inline-block;vertical-align:top;overflow:clip;padding-bottom:.14em;margin-bottom:-.14em;perspective:700px}
+.motion-heading-word{display:inline-block;transform-origin:50% 100%;backface-visibility:hidden}
+.section h2 .word-clip,.section h2 .motion-heading-word{color:inherit}
+.section.contact h2>.word-clip{color:var(--ink)}
+.section-ghost{position:absolute;left:0;right:0;top:20px;height:230px;overflow:clip;pointer-events:none;z-index:-1;opacity:.055;color:var(--white)}
+.section-ghost>span{display:block;white-space:nowrap;font-size:clamp(100px,16vw,250px);font-weight:800;line-height:1;letter-spacing:-12px;-webkit-text-stroke:1px currentColor;color:transparent;transform:translateX(var(--ghost-x,0px));will-change:transform}
+.services .section-ghost,.contact .section-ghost{color:#101010;opacity:.045}
+.section-heading,.about-grid,.faq-grid,.contact-grid{position:relative}
+.motion-enabled .about{border-radius:var(--section-radius,0px);transform:scale(var(--section-scale,1));transform-origin:center center}
+.motion-enabled .projects .project-card{translate:0 var(--project-wave,0px)}
+.motion-enabled .contact-panel{transform:perspective(1200px) rotateX(var(--contact-rx,0deg));transform-origin:50% 100%;box-shadow:0 30px 80px #0000000c}
+.section-sweep{position:absolute;left:0;top:0;width:100%;height:4px;background:var(--red-bright);transform-origin:left;transform:scaleX(var(--section-progress,0));pointer-events:none;z-index:2}
+.services .section-sweep{background:var(--red)}
+@media(min-width:1000px) and (min-height:750px){
+  .motion-enabled .services-grid{display:block;border:0;overflow:visible;border-radius:0;position:relative;padding-bottom:20px}
+  .motion-enabled .services .service-card{display:grid;grid-template-columns:1.1fr 1fr;gap:12px 70px;position:sticky;top:calc(115px + var(--card-index,0)*18px);z-index:var(--card-index,0);background:var(--paper);border:1px solid #ccc;border-radius:24px;min-height:470px;margin-bottom:125px;padding:36px 46px;box-shadow:0 -18px 60px #0000000a;scale:var(--stack-scale,1);transform-origin:center 10%}
+  .motion-enabled .services .service-card:last-child{margin-bottom:0}
+  .motion-enabled .services .service-top{grid-column:1/-1;margin-bottom:13px}
+  .motion-enabled .services .service-card h3{font-size:40px;grid-column:1;grid-row:2;margin:0}
+  .motion-enabled .services .service-card p{grid-column:1;grid-row:3;margin:0}
+  .motion-enabled .services .service-card ul{grid-column:2;grid-row:2/4;align-content:center;margin:0;gap:17px}
+  .motion-enabled .services .service-card li{font-size:17px}
+  .motion-enabled .services .service-link{grid-column:1/-1;grid-row:4;margin-top:14px;font-size:17px}
+}
+@media(max-width:1100px){.section-heading h2{font-size:56px}.section-description{font-size:15px;max-width:250px}.contact-grid,.faq-grid{gap:40px}.hero-jack .hero-description{font-size:14px}.jack-left{width:240px}.jack-right{width:245px}.hero-jack .hero-eyebrow{font-size:15px}.hero-jack .hero-actions .button{font-size:12px}.project-info h3{font-size:17px}.contact-panel{padding:28px}.contact h2{font-size:68px}.contact-star{font-size:60px}.about-copy p{font-size:16px}.service-card h3{font-size:26px}}
+@media(max-width:850px){.section{padding-block:95px}.section-heading h2,.about h2,.faq h2{font-size:46px;letter-spacing:-2px}.section-description{font-size:15px}.project-info h3{font-size:18px}.service-card h3{font-size:32px}.service-card{padding:34px}.service-card p,.service-card li{font-size:16px}.service-link{font-size:16px}.about-grid{gap:32px}.about h2{font-size:39px}.about-copy p{font-size:16px}.about .eyebrow{font-size:11px}.contact h2{font-size:76px}.contact-star{font-size:65px}.contact-panel{padding:34px}.contact-panel h3{font-size:28px}.portrait-caption{font-size:9px}.hero-jack .hero-eyebrow{font-size:14px}.hero-jack .hero-description{font-size:13px}.jack-left{width:215px}.jack-right{width:220px}.hero-jack .hero-note p{font-size:11px}.hero-jack .hero-name{font-size:11.2vw}.hero-jack .hero-actions .button{font-size:12px;padding-inline:18px}.stack-inner>span{font-size:10px}.stack-inner .stack-motion-track p{font-size:23px}.form-privacy{font-size:12px}}
+@media(max-width:650px){.hero-jack .hero-name{font-size:11.3vw;letter-spacing:-2px;top:82px}.jack-stage{min-height:985px}.hero-jack .hero-description{font-size:14px;line-height:1.8;max-width:280px}.hero-jack .hero-eyebrow{font-size:15px}.jack-left{top:637px;width:60%;max-width:300px}.jack-right{top:664px;width:37%}.hero-jack .hero-actions .button{font-size:12px;white-space:normal;padding:15px 18px;gap:10px}.hero-jack .text-link{font-size:13px}.hero-jack .hero-topline{font-size:9px}.hero-jack .hero-bottom>span,.hero-jack .hero-bottom a{font-size:8px}.portrait-caption{font-size:8px}.hero-jack .hero-bottom>span{max-width:185px}.hero-jack .portrait-stage{top:160px}}
+@media(max-width:600px){.section{padding-block:88px}.eyebrow{font-size:11px;letter-spacing:.8px}.section-heading{margin-bottom:36px}.section-heading h2,.about h2,.faq h2{font-size:clamp(35px,10.4vw,43px);letter-spacing:-1.8px;line-height:1.15}.section-description{font-size:16px;line-height:1.8}.header-inner{gap:13px}.brand-symbol{font-size:37px}.brand-name{font-size:12px}.header-cta{font-size:12px;padding:9px 13px}.mobile-menu nav a{font-size:18px}.section-aside p{font-size:12px}.count-badge{font-size:39px}.count-badge>span{font-size:11px}.portfolio-credit{font-size:13px;line-height:1.8;margin-bottom:30px}.project-grid{grid-template-columns:1fr;gap:37px}.project-info h3{font-size:20px}.project-info p{font-size:13px}.project-index{font-size:12px}.project-arrow{position:static;margin-left:auto;font-size:25px}.project-info{padding-right:0;padding-top:17px;gap:12px}.project-visit{font-size:15px}.projects-end>span,.projects-end .text-link{font-size:13px}.stack-inner>span{font-size:11px}.stack-inner .stack-motion-track p{font-size:23px;gap:23px}.service-card{padding:30px 25px}.service-card h3{font-size:32px;line-height:1.25}.service-card p{font-size:16px}.service-card li{font-size:14px}.service-link{font-size:15px}.service-top>span{font-size:14px}.service-top svg{width:51px;height:51px}.about-copy p{font-size:17px}.about-tags span{font-size:12px}.process-grid{grid-template-columns:1fr;gap:36px}.process-grid h3{font-size:28px}.process-grid p{font-size:16px}.step-number{font-size:21px}.faq-list summary{font-size:16px;padding-block:24px}.faq-list details p{font-size:15px}.contact h2{font-size:62px;letter-spacing:-2.8px}.contact-star{font-size:50px;margin-left:10px}.contact-copy>p:not(.eyebrow){font-size:17px}.contact-signature strong{font-size:17px}.contact-signature>div>span{font-size:12px}.contact-panel{padding:28px 22px}.contact-panel h3{font-size:25px}.contact-intro{font-size:14px}.field label,.prepared-result>label{font-size:14px}.field input,.field select,.field textarea,.prepared-result textarea{font-size:16px;min-height:52px}.form-submit{font-size:14px}.form-privacy{font-size:12px}#form-status{font-size:13px}.direct-contact>.wrap>span{font-size:13px}.direct-contact a{font-size:14px}.footer-top>p{font-size:13px}.footer-top>.text-link{font-size:14px}.footer-bottom{font-size:11px}.motion-toggle{font-size:10px;min-height:41px;padding:10px 13px}.section-ghost{top:25px;height:150px}.section-ghost>span{font-size:105px;letter-spacing:-5px}}
+@media(max-width:430px){.jack-stage{min-height:1050px}.jack-left{top:637px;width:100%;max-width:330px}.jack-right{top:867px;left:0;right:auto;width:auto;text-align:left}.hero-jack .hero-description{max-width:320px}.hero-jack .hero-actions .button{font-size:14px;padding:16px 23px;min-height:58px}.hero-jack .hero-name{font-size:11.4vw;top:89px}.hero-jack .portrait-stage{top:163px}.hero-jack .hero-bottom{padding-block:18px}.hero-jack .hero-bottom>span{max-width:155px}.hero-jack .hero-bottom a{font-size:7px}.contact h2{font-size:56px}.contact-star{font-size:44px}.contact-panel{padding:25px 20px}}
+@media(max-width:360px){.brand-name{font-size:11px}.brand-symbol{font-size:33px}.header-cta{font-size:11px;padding-inline:10px}.header-inner{gap:9px}.section-heading h2,.about h2,.faq h2{font-size:35px;letter-spacing:-1.6px}.contact h2{font-size:49px}.contact-star{font-size:39px;margin-left:8px}.portrait-caption{font-size:7px}.hero-jack .hero-name{font-size:11.1vw}.contact-panel h3{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.section-ghost>span{will-change:auto;transform:none!important}.section-sweep{display:none}.projects .project-card{translate:none!important}.about{scale:none!important;transform:none!important;border-radius:0!important}.contact-panel{transform:none!important}}
+.whatsapp-float{position:fixed;right:24px;bottom:24px;z-index:35;display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:60px;padding:14px 22px;background:var(--red);color:#fff;border:1px solid #ffffff66;border-radius:40px;font-size:14px;font-weight:600;box-shadow:0 8px 32px #0004;transition:transform .25s,background .25s,box-shadow .25s}
+@media(max-width:850px){.services-grid{grid-template-columns:1fr}.services .service-card:nth-child(n){border-left:0}.services .service-card:nth-child(n+2){border-top:1px solid #d6d6d3}}
+.whatsapp-float svg{width:29px;height:29px;flex-shrink:0}.whatsapp-float:hover{transform:translateY(-5px);background:#b41726;box-shadow:0 12px 38px #d91f3045}.whatsapp-float:focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(max-width:600px){.whatsapp-float{right:14px;bottom:14px;width:56px;height:56px;min-height:56px;padding:0}.whatsapp-float>span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.whatsapp-float svg{width:30px;height:30px}}
