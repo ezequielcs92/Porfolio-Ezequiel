@@ -18,6 +18,7 @@ const files = new Map([
   ["/motion.js", ["motion.js", "text/javascript; charset=utf-8"]],
   ["/favicon.svg", ["favicon.svg", "image/svg+xml"]],
   ["/robots.txt", ["robots.txt", "text/plain; charset=utf-8"]],
+  ["/sitemap.xml", ["sitemap.xml", "application/xml; charset=utf-8"]],
 ]);
 const port = Number(process.env.PORT || 4173);
 const server = http.createServer((req, res) => {

@@ -41,6 +41,6 @@ Poppins se carga desde Google Fonts. Las capturas de los proyectos del portfolio
 ## Publicación
 Es un sitio estático. Para desplegarlo, publicar los archivos HTML, CSS, JavaScript y recursos gráficos; no es necesario ejecutar `serve.cjs` en el hosting.
 
-Esta versión conserva `noindex, nofollow` y `robots.txt` de vista previa. Revisarlos al habilitar indexación, y configurar metadata/canonical con el dominio definitivo. El repositorio no activa por sí solo un hosting o dominio.
+Publicado en Vercel en https://www.ezequielcontreras.online/. La indexación está habilitada (`index, follow`, `robots.txt` abierto y `sitemap.xml`), con canonical y metadata Open Graph apuntando a ese dominio. El servidor local `serve.cjs` sigue enviando `X-Robots-Tag: noindex` porque solo sirve para la vista previa.
 
 No incluye documentación personal de planificación, notas locales ni generadores de imágenes con rutas de la máquina de desarrollo. No se declara una licencia sobre material de terceros: respetar los derechos y la atribución de las imágenes y marcas de cada proyecto.
