@@ -6,7 +6,7 @@ Landing personal de diseño y desarrollo web, ecommerce, software a medida y man
 - Diseño negro, rojo y blanco con tipografía Poppins.
 - Hero con retrato en perspectiva 2.5D y seguimiento del puntero.
 - Animaciones de títulos, tarjetas, transiciones y secciones vinculadas al scroll nativo.
-- Portfolio de 24 proyectos, con atribución de los trabajos realizados a través de Nómada Digital Web.
+- Portfolio de 25 proyectos, con atribución de los trabajos realizados a través de Nómada Digital Web.
 - Contacto personal, WhatsApp flotante y formulario para preparar una consulta.
 - Diseño responsive y respeto a la preferencia de movimiento reducido del sistema.
 

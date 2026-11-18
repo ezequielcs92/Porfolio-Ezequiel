@@ -13,6 +13,7 @@ const files = new Map([
   ["/amplify.css", ["amplify.css", "text/css; charset=utf-8"]],
   ["/ezequiel-portrait.webp", ["ezequiel-portrait.webp", "image/webp"]],
   ["/nomada-preview.webp", ["nomada-preview.webp", "image/webp"]],
+  ["/andrea-preview.png", ["andrea-preview.png", "image/png"]],
   ["/config.js", ["config.js", "text/javascript; charset=utf-8"]],
   ["/script.js", ["script.js", "text/javascript; charset=utf-8"]],
   ["/motion.js", ["motion.js", "text/javascript; charset=utf-8"]],
